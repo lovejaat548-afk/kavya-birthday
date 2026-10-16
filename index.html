@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#21142d">
+<title>Secret Birthday Gift | Kavya 💗</title>
+<style>
+*{box-sizing:border-box}
+:root{--pink:#fa6d9f;--purple:#8c5dc1;--cream:#fff5e8;--ink:#28182f}
+body{margin:0;font-family:Georgia,serif;color:var(--ink);background:#f9e6ee}
+button{cursor:pointer;font-family:inherit}
+header{background:#17131c;color:#fff;text-align:center;padding:17px 8px;font-family:Arial,sans-serif;font-size:20px;font-weight:bold;letter-spacing:1px}
+header span{color:#ff7ba9}
+.screen{display:none;min-height:calc(100vh - 58px);padding:25px 15px;align-items:center;justify-content:center;flex-direction:column;text-align:center;overflow:hidden}
+.screen.active{display:flex}
+.card{width:min(100%,460px);padding:25px 20px;border-radius:15px;background:#fffaf3;box-shadow:0 12px 35px #3b173b20;position:relative}
+h1{font-size:clamp(30px,8vw,48px);margin:10px 0;color:#8c4b91}
+h2{color:#8c4b91;margin:12px 0}
+p{line-height:1.7}
+.btn{border:0;border-radius:6px;padding:13px 22px;background:#e94f81;color:#fff;font-family:Arial,sans-serif;font-weight:bold;font-size:14px;margin:8px 4px;box-shadow:0 4px #b93062}
+.btn:active{transform:translateY(2px);box-shadow:0 2px #b93062}
+.btn.alt{background:#8c5dc1;box-shadow:0 4px #613b91}
+.curtain{background:linear-gradient(90deg,#7d102b,#d52c4e 20%,#8d1534 38%,#d92b50 50%,#81122e 70%,#d52c4e 90%,#72132d);color:white}
+.curtain .card{background:#fff8f0eF}
+.striped{background:repeating-linear-gradient(135deg,#fff8ed 0 17px,#f5e8dc 17px 34px)}
+.keypad{display:grid;grid-template-columns:repeat(3,58px);justify-content:center;gap:9px;margin:20px auto}
+.key{height:49px;border:1px solid #d9b7c8;border-radius:10px;background:white;color:#58344f;font-size:20px}
+#pin{width:190px;padding:13px;border:1px solid #caa6bf;border-radius:7px;text-align:center;font-size:23px;letter-spacing:9px;background:#fff}
+.anime{position:relative;width:185px;height:220px;margin:0 auto 15px;animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px)}}
+.hair{position:absolute;left:32px;top:8px;width:122px;height:157px;border-radius:65px 65px 38px 38px;background:linear-gradient(100deg,#b86bca,#f5a0c8,#d77bc5)}
+.face{position:absolute;left:54px;top:34px;width:80px;height:108px;border-radius:44% 44% 48% 48%;background:#ffe0d6;z-index:2}
+.bangs{position:absolute;left:50px;top:24px;width:90px;height:49px;background:#e994c7;border-radius:60% 60% 35% 20%;z-index:3;transform:rotate(-5deg)}
+.eye{position:absolute;top:77px;width:10px;height:17px;border-radius:50%;background:#6a4a9a;z-index:4}
+.eye:after{content:"";display:block;width:4px;height:5px;border-radius:50%;background:white;margin:3px}
+.e1{left:72px}.e2{left:111px}
+.blush{position:absolute;top:100px;width:17px;height:8px;border-radius:50%;background:#ff9cae;filter:blur(2px);z-index:4}
+.b1{left:58px}.b2{left:118px}
+.mouth{position:absolute;left:91px;top:114px;width:12px;height:7px;border-bottom:2px solid #cf7088;border-radius:50%;z-index:4}
+.bodygirl{position:absolute;left:45px;top:137px;width:98px;height:75px;border-radius:48% 48% 12px 12px;background:linear-gradient(#ffc2dc,#a778ce);z-index:1}
+.sparkle{font-size:35px;color:#d88cb4}
+.giftrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:24px 0}
+.heartgift{border:0;background:none;font-size:clamp(45px,13vw,65px);filter:drop-shadow(0 5px 5px #c34d6544);transition:.2s}
+.heartgift:active{transform:scale(.8)}
+.memoryrow{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:20px 0}
+.polaroid{background:white;padding:7px 7px 16px;box-shadow:0 4px 12px #34203525;transform:rotate(-3deg);font:11px Arial,sans-serif;color:#5b425a}
+.polaroid:nth-child(2){transform:rotate(3deg)}
+.polaroid:nth-child(3){transform:rotate(-2deg)}
+.photoart{height:85px;display:flex;align-items:center;justify-content:center;background:linear-gradient(140deg,#f6bfd5,#c9b7ed);font-size:30px}
+.letter{background:#fffaf3;text-align:left;padding:20px;border:1px dashed #d7a3bd;border-radius:8px;white-space:pre-line;line-height:1.9}
+.cake{font-size:85px;animation:bob 2s infinite}
+.small{font:12px Arial,sans-serif;color:#8e7187}
+#toast{min-height:22px;color:#bd3f78;font:13px Arial,sans-serif}
+@media(max-width:360px){.card{padding:20px 12px}.keypad{gap:6px}.key{height:44px}}
+</style>
+</head>
+<body>
+<header>Secret <span>Birthday Gift</span> 🎀</header>
+
+<section class="screen active curtain" id="s1">
+ <div class="card">
+  <div class="sparkle">✦ ✧ ✦</div>
+  <p>YOU HAVE A LITTLE SURPRISE</p>
+  <h1>For Kavya 💗</h1>
+  <p>A tiny secret made especially for someone special.</p>
+  <div style="font-size:58px">🎁</div>
+  <button class="btn" onclick="go('s2')">OPEN THE GIFT</button>
+ </div>
+</section>
+
+<section class="screen striped" id="s2">
+ <div class="card">
+  <div style="font-size:38px">🔐</div>
+  <h2>Secret Passcode</h2>
+  <p>Enter the birthday code to unlock your surprise.</p>
+  <input id="pin" readonly placeholder="••••">
+  <div class="keypad">
+   <button class="key" onclick="digit('1')">1</button>
+   <button class="key" onclick="digit('2')">2</button>
+   <button class="key" onclick="digit('3')">3</button>
+   <button class="key" onclick="digit('4')">4</button>
+   <button class="key" onclick="digit('5')">5</button>
+   <button class="key" onclick="digit('6')">6</button>
+   <button class="key" onclick="digit('7')">7</button>
+   <button class="key" onclick="digit('8')">8</button>
+   <button class="key" onclick="digit('9')">9</button>
+   <button class="key" onclick="clearPin()">⌫</button>
+   <button class="key" onclick="digit('0')">0</button>
+   <button class="key" onclick="unlock()">✓</button>
+  </div>
+  <p class="small">Hint: Her birthday is 11 December 😉</p>
+  <div id="toast"></div>
+ </div>
+</section>
+
+<section class="screen" id="s3" style="background:#e6d5f4">
+ <div class="card">
+  <div class="anime">
+   <div class="hair"></div><div class="face"></div><div class="bangs"></div>
+   <div class="eye e1"></div><div class="eye e2"></div>
+   <div class="blush b1"></div><div class="blush b2"></div>
+   <div class="mouth"></div><div class="bodygirl"></div>
+  </div>
+  <h2>I made something for you! 💌</h2>
+  <p>There's a little birthday surprise waiting just for you, Kavya.</p>
+  <p>Do you want to see it? 💗</p>
+  <button class="btn" onclick="go('s4')">YES, SHOW ME! 💕</button>
+  <button class="btn alt" onclick="nope()">NO 🙈</button>
+  <div id="noMsg" class="small"></div>
+ </div>
+</section>
+
+<section class="screen" id="s4" style="background:#fae8ef">
+ <div class="card">
+  <h2>Choose a heart 💗</h2>
+  <p>Each heart hides a little surprise. Tap one to open it!</p>
+  <div class="giftrow">
+   <button class="heartgift" onclick="gift(1)">💝</button>
+   <button class="heartgift" onclick="gift(2)">💖</button>
+   <button class="heartgift" onclick="gift(3)">💗</button>
+  </div>
+  <p id="giftMsg">Which one will you choose, Kavya?</p>
+  <button class="btn" onclick="go('s5')">NEXT SURPRISE ✨</button>
+ </div>
+</section>
+
+<section class="screen" id="s5" style="background:#e7dcf5">
+ <div class="card">
+  <h2>Our Little Memory Corner 📸</h2>
+  <p>Three little wishes for your special day.</p>
+  <div class="memoryrow">
+   <div class="polaroid"><div class="photoart">🌷</div><p>Keep Smiling</p></div>
+   <div class="polaroid"><div class="photoart">🧸</div><p>Stay Lovely</p></div>
+   <div class="polaroid"><div class="photoart">💌</div><p>Dream Big</p></div>
+  </div>
+  <p class="small">A little collection of happy moments.</p>
+  <button class="btn" onclick="go('s6')">READ YOUR LETTER 💌</button>
+ </div>
+</section>
+
+<section class="screen" id="s6" style="background:#f7e7f0">
+ <div class="card">
+  <div class="anime">
+   <div class="hair"></div><div class="face"></div><div class="bangs"></div>
+   <div class="eye e1"></div><div class="eye e2"></div>
+   <div class="blush b1"></div><div class="blush b2"></div>
+   <div class="mouth"></div><div class="bodygirl"></div>
+  </div>
+  <h2>Dear Kavya 💗</h2>
+  <div class="letter">Happy Birthday, Kavya! 🎂
+
+Tumhari life hamesha khushiyon se bhari rahe. Tumhari smile hamesha bani rahe aur tumhare saare achhe dreams poore hon.
+
+I hope your birthday brings you lots of laughter, sweet memories, and little moments that make you smile.
+
+You are special, and you deserve kindness, respect, and happiness every day.
+
+Keep shining, keep smiling, and never stop believing in your dreams. 🌸
+
+Happy Birthday once again! 💖
+
+With lots of love and good wishes. 💌</div>
+  <button class="btn" onclick="go('s7')">MAKE A WISH 🎂</button>
+ </div>
+</section>
+
+<section class="screen" id="s7" style="background:#eadcf5">
+ <div class="card">
+  <div class="cake">🎂</div>
+  <h1>Happy Birthday!</h1>
+  <h2>Kavya 🌸</h2>
+  <p>11 December</p>
+  <p>Close your eyes, make a wish, and let this new year bring you endless smiles and beautiful memories.</p>
+  <div class="sparkle">✦ 💗 ✦ 💗 ✦</div>
+  <button class="btn" onclick="celebrate()">CELEBRATE 🎉</button>
+  <button class="btn alt" onclick="go('s1')">REPLAY SURPRISE ↻</button>
+ </div>
+</section>
+
+<script>
+function go(id){
+ document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0,0);
+}
+function digit(n){
+ let p=document.getElementById('pin');
+ if(p.value.length<4)p.value+=n;
+ if(p.value.length===4)setTimeout(unlock,180);
+}
+function clearPin(){
+ let p=document.getElementById('pin');
+ p.value=p.value.slice(0,-1);
+ document.getElementById('toast').textContent='';
+}
+function unlock(){
+ let v=document.getElementById('pin').value;
+ if(v==='1112'||v==='1211'){go('s3');document.getElementById('toast').textContent=''}
+ else{document.getElementById('toast').textContent='Try again! Hint: 11 December = 1112';document.getElementById('pin').value=''}
+}
+function nope(){
+ document.getElementById('noMsg').textContent='Are you sure? There is a little gift waiting! 🥹';
+}
+function gift(n){
+ let msgs={
+  1:'Your first wish: May you always have a reason to smile! 🌷',
+  2:'Your second wish: May your dreams take you to wonderful places! ✨',
+  3:'Your third wish: May happiness find you every day! 💗'
+ };
+ document.getElementById('giftMsg').textContent=msgs[n];
+}
+function celebrate(){
+ for(let i=0;i<35;i++){
+  let e=document.createElement('span');
+  e.textContent=['💗','✨','🌸','💕','🎉'][Math.floor(Math.random()*5)];
+  e.style.cssText='position:fixed;top:-30px;left:'+Math.random()*100+'%;font-size:25px;z-index:20;pointer-events:none;transition:transform 4s linear,opacity 4s';
+  document.body.appendChild(e);
+  setTimeout(()=>{e.style.transform='translateY(110vh) rotate(500deg)';e.style.opacity='0'},40);
+  setTimeout(()=>e.remove(),4200);
+ }
+}
+</script>
+</body>
+</html>
